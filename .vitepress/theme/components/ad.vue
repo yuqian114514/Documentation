@@ -36,6 +36,32 @@ const adConfig = [
     qq: 3073559291,
     price: 199,
   },
+  {
+    language: "zh",
+    adText:
+      "🔥 IDCN 云｜MCSManager 推荐！9950X/i9-14900K 游戏服高防云服务器 → idcnetwork.cn【互联网数据中心】",
+    adAddr: "https://www.idcnetwork.cn/",
+    endTime: "2027/4/1 23:59:59",
+    qq: 1481515930,
+    price: 4000,
+  },
+  {
+    language: "zh",
+    adText: "梦之插件工作室｜做更简单、更轻量、更好用的基础插件",
+    adAddr: "https://github.com/ChengZhiMeow/MHDF-Tools",
+    endTime: "2026/8/8 23:59:59",
+    qq: 292200693,
+    price: 599,
+  },
+  {
+    language: "zh",
+    adText:
+      "🔥妙想云计算｜MCSManager 推荐！9950X/i9-14900K 高防游戏云服务器火热销售 → cloud.someo.top",
+    adAddr: "https://cloud.someo.top/",
+    endTime: "2026/8/20 23:59:59",
+    qq: 2974560682,
+    price: 199,
+  },
 ];
 
 const currentLanguage = navigator.language;
@@ -48,7 +74,7 @@ const tipItems = reactive(
   adConfig.filter((item) => {
     const endTime = new Date(item.endTime).getTime();
     return currentLanguage.includes(item.language) && now < endTime;
-  })
+  }),
 );
 </script>
 
