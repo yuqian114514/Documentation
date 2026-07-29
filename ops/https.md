@@ -33,8 +33,8 @@ Before starting, please ensure the following files and configurations are ready.
 
 1. Issued certificate chain file and path: `/root/ssl/domain_fullchain.crt`.
 2. Private key corresponding to the issued certificate and path: `/root/ssl/domain.key`.
-3. Daemon configuration file: `/opt/mcsmanager/daemon/data/Config/global.json`.
-4. Web configuration file: `/opt/mcsmanager/web/data/SystemConfig/config.json`.
+3. Daemon configuration file: `/opt/mcsmanager/web/data/SystemConfig/config.json`.
+4. Web configuration file: `/opt/mcsmanager/daemon/data/Config/global.json`.
 5. Domain name has been correctly resolved to IP address.
 6. Firewall or port forwarding has allowed port `24444` and port `23333`.
 7. Stop the web and daemon processes.
